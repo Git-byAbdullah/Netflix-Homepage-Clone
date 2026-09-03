@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(161, 11, 36);
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    z-index: 1000;
+}
+
+header i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*................. Login Section..................... */
+.container{
+    background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)), url(https://assets.nflxext.com/ffe/siteui/vlv3/a00fdfd7-4916-4f12-b5ff-c05b9d7b4d07/web/PK-en-20260824-TRIFECTA-perspective_cef32456-ff7e-4bc4-9c3c-9287eaebf6cf_large.jpg);
+    background-size: cover;
+    height:100vh;
+}
+.top-bar{
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-in-button{
+    background-color: #8a0a10;
+    color: #ffffff;
+    padding: 7px 17px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight:200;
+    text-decoration: none;
+    margin-top: 75px;
+}
+.logo{
+    padding-top: 80px;
+    height:120px;
+    width:100px;
+    margin-left:16px;
+}
+.content{
+    padding:100px 32px 32px;
+    margin:-32px 0px 0px ;
+
+}
+.content h1{
+    font-size: 55px;
+    color:#ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.content h3{
+    color:#ffffff;
+    font-size:16px;
+    padding-top:10px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.content p{
+    margin-bottom: 24px;
+    padding-top: 15px;
+    font-size:18px;
+    color:#ffffff;
+    text-align: center;
+    font-weight: bold;
+
+}
+.member-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+input{
+    width: 600px;
+    padding: 15px 10px;
+    border: 1px solid #e9e7e7;
+    border-radius: 4px;
+    color: rgb(240, 234, 234);
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70));
+    margin-bottom: 10px;
+}
+button{
+    background-color:#8a0a10;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 30px;
+    border:none;
+    border-radius:4px;
+}
+/*................. Trending Section..................... */
+ .trending-section{
+    background-color: #000000;
+    height: 350px;
+}
+
+.trending-section h2{
+    font-size: 25px; 
+    color: #ffffff;
+    padding: 20px 0px 10px 150px;
+}
+.row-wrapper {
+  position: relative;
+}
+
+.row-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  padding: 40px 0 60px 0;
+  scrollbar-width: none;
+  margin-left: 120px;
+  margin-right: 130px;
+}
+.row-track::-webkit-scrollbar { display: none; }
+
+.card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 15vw;
+  min-width: 190px;
+  height: 16.9vw;
+  min-height: 210px;
+  cursor: pointer;
+  transition: transform 300ms ease, z-index 0s;
+  transform-origin: center;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.10);
+  z-index: 20;
+}
+
+.card:first-child { margin-left: 5px; }
+
+.poster {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 88%;
+  height: 100%;
+  border-radius: 0.5rem ;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  background: #2a2a2a;
+  z-index: 1;
+}
+
+.card:hover .poster {
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.card-hover-info {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 88%;
+  background: #181818;
+  border-radius: 0.5rem;
+  padding: 12px 14px 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.card:hover .card-hover-info {
+  display: block;
+}
+
+.hover-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+
+.rank-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 85%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  z-index: 5;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.rank-number {
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 5.5vw;
+  line-height: 0.75;
+  color: #141414;
+  -webkit-text-stroke: 2px #e5e5e5;
+  letter-spacing: -2px;
+  white-space: nowrap;
+}
+
+/* Two-digit ranks (10+) need a smaller size so they don't overrun the card */
+.rank-number.two-digit {
+  font-size: 4.2vw;
+  letter-spacing: -1px;
+}
+
+/* Netflix-style edge arrows: hidden until row hover, disabled/hidden at each end */
+.nav-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 60px;
+  width: 4%;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 20, 20, 0.5);
+  color: #fff;
+  font-size: 2.5vw;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 30;
+  border: none;
+}
+.row-wrapper:hover .nav-arrow.is-active {
+  opacity: 1;
+}
+.nav-arrow.left { left: 0; }
+.nav-arrow.right { right: 0; }
+
+/* When the row is scrolled all the way to an end, Netflix hides that arrow */
+.nav-arrow.is-hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+
+
+
+
+
+/*.................. Reason Section..................... */
+.reason-to-join{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 150px;
+    height: 400px;
+
+}
+.reason-to-join h2{
+    font-size: 24px; 
+}
+.reason-container{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.reason-card{
+    background-color: #021b27;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px ; 
+    height: 300px; 
+    border-radius: 15px;
+    width: 250px;
+    flex-shrink: 0;
+}
+.reason-card h3{
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.reason-icon{
+    margin-top: auto;
+    align-self: flex-end;
+    font-size: 30px;
+}
+
+
+
+
+
+
+/*................. FAQ Section..................... */
+.faq{
+    background-color: #000000;
+}
+.faq-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background-color: #000000;
+  
+}
+
+.faq-title {
+  padding-top:70px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {     
+  background-color: #2d2d2d;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 24px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-question:hover {
+  background-color: #454545;
+}
+
+.faq-icon {
+  font-size: 40px;
+  font-weight:lighter;
+  min-width: 30px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #2d2d2d;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  border-top: 1px solid #000000;
+}
+
+.faq-answer p {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #e5e5e5;
+}
+
+.faq-answer .first-line {
+  padding-bottom: 0;
+}
+.faq-answer .second-line {
+  padding-top: 16px;
+}
+/*..........Member Form Section............*/
+.member{
+    background-color: #000000;
+    height: 400px;
+}
+.member h2{
+   font-size: 20px;
+   font-weight: 0;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+}
+.member-form{
+    padding-top:16px
+}
+.member-form input{
+    width: 800px;
+    background-color:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.70));
+}
+button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.member-form p{
+    padding-top: 20px;
+    font-size:17px;
+    color: #ffffffb3;
+    width: 1050px;
+}
+/*................. Footer Section..................... */
+.footer-1{
+    background-color: #000000;
+    padding: 0px 150px;
+    height: 50px;
+}
+.footer-2{
+    background-color: #000000;
+    padding: 0px 150px;
+    height: 180px;
+    display: flex;
+    gap: 130px; 
+}
+.ques{
+    padding-bottom: 20px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+.footer a{
+    color: #ffffffbe;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.footer-3{
+    background-color: #000000;
+    padding: 0px 150px;
+    height: 80px;
+}
+.language{
+    padding:5px 25px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.footer-4{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0px 150px;
+    height: 160px;   
+}
+.footer-4 p{
+    font-size: 14px;
+    color: #ffffffbe;
+    padding-bottom: 30px;
+}
+.footer-end{
+    font-size: 13px;
+    color: #ffffff80;
+}

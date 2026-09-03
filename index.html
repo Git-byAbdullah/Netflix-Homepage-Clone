@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Pakistan - Watch Movies & TV Shows Online</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-gift"></i>
+        <a href="#">New to Netflix? Try 30 days for Rs 0.</a>
+    </header>
+    <div class="container">
+        <div class="top-bar">
+            <img  class="logo" src="https://occ.a.nflxso.net/dnmt/api/v6/iL4oJVDYZ8KLSrJ6eG2OwtghbfQ/AAAAAfwxusEeCteu-L_QQ56_G2cohyI1E4BIh2uyr5t9gDhH0CKWHw3NVhndjuF7yQ26z3cYq_lnzY5pP6OarHyiibuiy2jIIa5sIhSvgal1S6u9YDVAyVoX6osPniEKN-dYy77H_pLfOCD7.svg" alt="Netflix Logo">
+            <a href="#" class="sign-in-button">Sign In</a>
+        </div>
+        <div class="content">
+            <h1>Unlimited movies, TV <br>shows, and more</h1>
+            <p>Plans start at Rs 250. Cancel anytime.</p>
+            <h3>Ready to watch? Enter your email to start your membership.</h3>
+            <form  class="member-form" action="#" method="post">
+                <input type="email" name="email" placeholder="Email address" required>
+                <button type="submit">Try 30 Days for Rs 0</button>
+                <p>New members only. Terms below.</p>
+            </form>
+        </div>
+    </div>
+    <section class="trending-section">
+        <h2>Trending Now</h2>
+        <div class="row-wrapper" id="rowWrapper">
+            <button class="nav-arrow left is-hidden" id="leftArrow" aria-label="Scroll left">&#10094;</button>
+            <button class="nav-arrow right is-active" id="rightArrow" aria-label="Scroll right">&#10095;</button>
+            <div class="row-track" id="track"></div>
+        </div>
+    </section>
+        <!-- <div class="trending-container">
+            <div class="trend-card">
+                <span class="number">1</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMmI0ODNhYmEtOWM4My00MmFlLTk4ZmEtYmQ2MmNjODcxNzU2XkEyXkFqcGc@._V1_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">2</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZTczMDQ0N2EtMTY4NS00ODJhLTk4MzQtOGJmZGRmY2M4MWQwXkEyXkFqcGc@._V1_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">3</span>
+                <div class="card-img" style="background-image: url(https://i.pinimg.com/564x/73/78/a6/7378a6eec960bc82e67e98a3a7fb3d26.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">4</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMWRiMDY0ZTAtNDJlOS00MjVmLWFkNTktNDk4YzNmNTY4NmIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">5</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMmI0ODNhYmEtOWM4My00MmFlLTk4ZmEtYmQ2MmNjODcxNzU2XkEyXkFqcGc@._V1_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">6</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZTczMDQ0N2EtMTY4NS00ODJhLTk4MzQtOGJmZGRmY2M4MWQwXkEyXkFqcGc@._V1_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">7</span>
+                <div class="card-img" style="background-image: url(https://i.pinimg.com/564x/73/78/a6/7378a6eec960bc82e67e98a3a7fb3d26.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">8</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMWRiMDY0ZTAtNDJlOS00MjVmLWFkNTktNDk4YzNmNTY4NmIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">9</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BMmI0ODNhYmEtOWM4My00MmFlLTk4ZmEtYmQ2MmNjODcxNzU2XkEyXkFqcGc@._V1_.jpg);"></div>
+            </div>
+            <div class="trend-card">
+                <span class="number">10</span>
+                <div class="card-img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BZTczMDQ0N2EtMTY4NS00ODJhLTk4MzQtOGJmZGRmY2M4MWQwXkEyXkFqcGc@._V1_.jpg);"></div>
+            </div>
+        </div> -->
+
+
+    <section class="reason-to-join">
+        <h2>More Reasons to Join</h2>
+        <div class="reason-container">
+            <div class="reason-card">
+                <h3>Enjoy on your TV</h3>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <div class="reason-icon"><i class="fa-solid fa-tv"></i></div>
+            </div>
+            <div class="reason-card">
+                <h3>Download your shows to watch offline</h3>
+                <p>Save your favorites easily and always have something to watch.</p>
+                <div class="reason-icon"><i class="fa-solid fa-download"></i></div>
+            </div>
+            <div class="reason-card">
+                <h3>Watch anywhere</h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <div class="reason-icon"><i class="fa-solid fa-binoculars"></i></div>
+            </div>
+            <div class="reason-card">
+                <h3>Create profiles for kids</h3>
+                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                <div class="reason-icon"><i class="fa-solid fa-child"></i></div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+    <div class="faq-container">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is Netflix?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="first-line">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                    <p class="second-line">You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How much does Netflix cost?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs,  no contracts.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Where can I watch?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players, and game consoles.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do I cancel?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What can I watch on Netflix?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is Netflix good for kids?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+            <div class="faq-answer">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="member">
+        <h2>Ready to watch? Enter your email to start your membership.</h2>
+        <form  class="member-form" action="#">
+            <input type="email" name="email" placeholder="Email address" required>
+            <button type="submit"><a href="#">Try 30 Days for Rs 0</a></button>
+            <p>This offer is only valid for new members. This offer is non-transferrable. You agree that Netflix will charge the membership fee at the end of the free trial to your payment method and will automatically continue your membership until you cancel. Some methods of payment may not be eligible to redeem this offer.</p>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-1">
+            <a class="ques" href="#">Questions? Contact us.</a>
+        </div>
+        <div class="footer-2">
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-links"> 
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Account</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Media Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <div class="footer-3">
+        <select name="language" class="language">
+                <option value="english">English</option>
+        </select>
+    </div>
+    <div class="footer-4">
+        <p>Netflix Pakistan</p>
+        <span class="footer-end">This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
