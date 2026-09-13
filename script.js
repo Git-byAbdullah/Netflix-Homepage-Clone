@@ -4,9 +4,9 @@ const titles = [
   { rank: 3, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVKWLa9QI_o4h_Pa4dOxkk7kDd7e9l4tW2e64qI2DpRdxS2j21AOi45qHa&s=10" },
   { rank: 4, poster: "https://m.media-amazon.com/images/M/MV5BMTMyOTkzMzg4Ml5BMl5BanBnXkFtZTcwNTkxNzQzNg@@._V1_.jpg" },
   { rank: 5, poster: "https://upload.wikimedia.org/wikipedia/en/8/8b/Jaan-E-Mann_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
-  { rank: 6, poster: "https://m.media-amazon.com/images/M/MV5BMWRiMDY0ZTAtNDJlOS00MjVmLWFkNTktNDk4YzNmNTY4NmIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-  { rank: 7, poster: "https://i.pinimg.com/736x/d1/4b/bd/d14bbd48ad2586e99adce52c10a07b92.jpg" },
-  { rank: 8, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFl0N5IeP0OSFHmtBcSHhkdzz8uwJeiErlHKx_YcRUc0XzRl2MdCo00Y&s=10" },
+  { rank: 6, poster: "HAHK Poster.jpg" },
+  { rank: 7, poster: "https://m.media-amazon.com/images/M/MV5BMWRiMDY0ZTAtNDJlOS00MjVmLWFkNTktNDk4YzNmNTY4NmIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+  { rank: 8, poster: "https://i.pinimg.com/736x/d1/4b/bd/d14bbd48ad2586e99adce52c10a07b92.jpg" },
   { rank: 9, poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSb_hYHg89yDG-i31PyvjELgSGz98pBTlnNYcZy0JnFLhcjiLcieTGF8&s=10" },
   { rank: 10, poster: "https://m.media-amazon.com/images/M/MV5BMDcwZDJhOGQtNWI5NS00MmI3LWFkYjMtNTY3OGUxMjgwMjZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 ];
